@@ -1,0 +1,82 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    // "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
+  "ignorePatterns": [],
+  "rules": {
+    // Possible Problems
+    "no-constructor-return": "warn",
+    "no-duplicate-imports": ["warn", { "includeExports": true }],
+    "no-self-compare": "warn",
+    "no-template-curly-in-string": "warn",
+    "no-unmodified-loop-condition": "warn",
+    "no-unreachable-loop": "warn",
+    "no-use-before-define": "warn",
+    // Suggestions
+    "block-scoped-var": "warn",
+    "class-methods-use-this": "warn",
+    "consistent-return": "warn",
+    "consistent-this": "warn",
+    "curly": "warn",
+    "default-case": "warn",
+    "default-case-last": "warn",
+    "eqeqeq": "warn",
+    "max-classes-per-file": ["warn", 2],
+    "max-depth": ["warn", 2],
+    "max-lines": ["warn", 500],
+    "max-lines-per-function": ["warn", { "max": 200 }],
+    "new-cap": "warn",
+    "no-confusing-arrow": "warn",
+    "no-else-return": "warn",
+    "no-empty-function": "warn",
+    "no-implicit-coercion": "warn",
+    "no-invalid-this": "warn",
+    "no-iterator": "warn",
+    "no-labels": "warn",
+    "no-lone-blocks": "warn",
+    "no-lonely-if": "warn",
+    "no-loop-func": "warn",
+    "no-mixed-operators": "warn",
+    "no-negated-condition": "warn",
+    "no-nested-ternary": "warn",
+    "no-return-assign": ["warn", "always"],
+    "no-return-await": "warn",
+    "no-throw-literal": "warn",
+    "no-undef-init": "warn",
+    "no-undefined": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-unused-expressions": "warn",
+    "no-useless-catch": "warn",
+    "no-useless-computed-key": "warn",
+    "no-useless-concat": "warn",
+    "no-useless-constructor": "warn",
+    "no-useless-return": "warn",
+    "no-var": "warn",
+    "prefer-const": ["warn", { "destructuring": "any" }],
+    "prefer-destructuring": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
+    "require-await": "warn",
+    "spaced-comment": ["warn", "always", { "line": { "markers": ["/"] } }],
+    "yoda": ["warn", "never", { "exceptRange": true }],
+    // Layout & Formatting
+    "arrow-parens": "warn",
+    "jsx-quotes": ["warn", "prefer-double"],
+    "line-comment-position": ["warn", { "position": "above" }],
+    "no-multi-spaces": "warn",
+    // Other
+    "tsdoc/syntax": "warn"
+  },
+  "root": true
+}
